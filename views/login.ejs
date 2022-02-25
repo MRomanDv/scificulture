@@ -15,7 +15,7 @@
     <section class="background">
         <h2>Log<span>in</span></h2>
         <div class="signup-container">
-            <form action="/sci-fi/login" method="post" class="form">
+            <form action="/login" method="post" class="form">
                 <div class="input-box">
                     <input type="text" name="user" id="user" placeholder="user" required>
                 </div>
@@ -42,7 +42,7 @@
             showConfirmButton: <%= showConfirmButton %>,
             timer: <%= timer %>
         }).then(()=>{
-            window.location= '/sci-fi/<%= ruta %>' 
+            window.location= '/<%= ruta %>' 
         })
     </script>
     <%} %>  

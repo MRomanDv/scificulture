@@ -17,8 +17,23 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 //ROUTER
-const router = require('./routes/routes')
-app.use('/sci-fi', router)
+
+app.get('/',(req,res)=>{
+    res.render('index')
+})
+
+app.get('/music',(req,res)=>{
+    res.render('music')
+})
+app.get('/films',(req,res)=>{
+    res.render('films')
+})
+app.get('/login',(req,res)=>{
+    res.render('login')
+})
+app.get('/register',(req,res)=>{
+    res.render('register')
+})
 
 
 //SIGNUP DATA
@@ -91,6 +106,7 @@ app.post('/login',async(req,res)=>{
        })
     }
  })
+
 
 //port
 

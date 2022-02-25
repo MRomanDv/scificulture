@@ -6,10 +6,10 @@ const paintNav = ()=>{
 </div>
 <nav>
     <ul>
-        <li class="homeli"><a href="/sci-fi/">Home page</a></li>
-        <li><a href="/sci-fi/music">Sci fi Music</a></li>
-        <li><a href="/sci-fi/films">Arts & Films</a></li>
-        <li class="loginli"><a href="/sci-fi/login">Log in</a><a href="/sci-fi/register">Register</a></li>
+        <li class="homeli"><a href="/">Home page</a></li>
+        <li><a href="/music">Sci fi Music</a></li>
+        <li><a href="/films">Arts & Films</a></li>
+        <li class="loginli"><a href="/login">Log in</a><a href="/register">Register</a></li>
     </ul>
 </nav>
 <div class="menu-btn"><i class="fas fa-bars"></i></div>`
