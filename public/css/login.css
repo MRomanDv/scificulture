@@ -21,10 +21,14 @@
     color: seashell;
     margin: -100px 0 100px 0;
     transform-origin: center;
-    animation-name: h2animation;
-    animation-timing-function: ease;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+    -webkit-animation-name: h2animation;
+            animation-name: h2animation;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
     font-family:'Bungee', cursive;
 }
 .background h2 span {
@@ -32,12 +36,17 @@
     transition: 1s all ease;
 }
 .signup-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background: linear-gradient(90deg, rgba(45, 96, 139, 0.584) 0%, rgba(94, 19, 165, 0.425) 50%, rgba(175, 122, 48, 0.615) 100%);
     padding: 40px;
     border-radius: 20px;
-    animation: hue-rotate 2s infinite ease-in-out;
+    -webkit-animation: hue-rotate 2s infinite ease-in-out;
+            animation: hue-rotate 2s infinite ease-in-out;
 }
 form .input-box {
     margin-bottom: 1rem;
@@ -54,6 +63,22 @@ form .input-box input {
     border-bottom: 2px solid rgb(71, 135, 255);
     color: seashell;
     padding-left: 5px;
+}
+form .input-box input::-webkit-input-placeholder {
+    color: seashell;
+    opacity: .5;
+}
+form .input-box input::-moz-placeholder {
+    color: seashell;
+    opacity: .5;
+}
+form .input-box input:-ms-input-placeholder {
+    color: seashell;
+    opacity: .5;
+}
+form .input-box input::-ms-input-placeholder {
+    color: seashell;
+    opacity: .5;
 }
 form .input-box input::placeholder {
     color: seashell;
@@ -88,6 +113,16 @@ form .input-box input::placeholder {
 }
 
 
+@-webkit-keyframes h2animation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 @keyframes h2animation {
     0% {
         transform: scale(0);
@@ -97,23 +132,56 @@ form .input-box input::placeholder {
     }
 }
 
-@keyframes hue-rotate {
+@-webkit-keyframes hue-rotate {
     0%{
-        filter: hue-rotate(90deg);
+        -webkit-filter: hue-rotate(90deg);
+                filter: hue-rotate(90deg);
     }
     50% {
-        filter: hue-rotate(180deg);
+        -webkit-filter: hue-rotate(180deg);
+                filter: hue-rotate(180deg);
     }
     70% {
-        filter: hue-rotate(220deg);
+        -webkit-filter: hue-rotate(220deg);
+                filter: hue-rotate(220deg);
     }
     100% {
-        filter: hue-rotate(100deg);
+        -webkit-filter: hue-rotate(100deg);
+                filter: hue-rotate(100deg);
     }
 }
 
-@media screen and (max-width:300px){
+@keyframes hue-rotate {
+    0%{
+        -webkit-filter: hue-rotate(90deg);
+                filter: hue-rotate(90deg);
+    }
+    50% {
+        -webkit-filter: hue-rotate(180deg);
+                filter: hue-rotate(180deg);
+    }
+    70% {
+        -webkit-filter: hue-rotate(220deg);
+                filter: hue-rotate(220deg);
+    }
+    100% {
+        -webkit-filter: hue-rotate(100deg);
+                filter: hue-rotate(100deg);
+    }
+}
+
+@media screen and (max-width:400px){
     .signup-container {
         padding: 20px;
     }
+    form .input-box input {
+        width: 180px;
+    }
+    .input-box-btn input {
+        width: 180px;
+    }
+    .background h2 {
+        font-size: 4rem;
+    }
+
 }

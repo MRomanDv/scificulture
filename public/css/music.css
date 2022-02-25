@@ -10,15 +10,17 @@ body {
 
 header {
     width: 100vw;
-    height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(24, 22, 22);
-    
+    margin-bottom: 100px;
+    padding-top: 180px;
 }
 .header {
-    padding-top: 50px;
     width: 80%;
     background: url('/static/imgs/.jpeg');
     background-size: contain;
@@ -46,6 +48,8 @@ header {
     
 }
 .header-img {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     position: relative;
     border-bottom-left-radius: 50%;
@@ -110,6 +114,8 @@ header {
         text-align: center;
     }
     .header-img {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin-top: 60px;
     }
@@ -120,6 +126,9 @@ header {
         font-size: 5.5vw;
         
     }
+    header {
+        padding-top: 140px;
+    }
     
 }
 @media screen and (max-width:1000px) {
@@ -128,8 +137,13 @@ header {
     }
     header {
         align-items: flex-start;
+        padding-top: 50px;
+    }
+    .header-img img {
+        width: 55vw;
     }
 }
+
 @media screen and (max-width:700px) {
     .scifi-records {
         display: flex;
@@ -140,13 +154,26 @@ header {
     .scifi-records
      {
         text-align: center;
+        padding-top: 0;
     }
     .scifi-records-content_title {
         width: 100%;
+    }
+    .header-img img {
+        width: 60vw;
+    }
+    .header-content_text {
+        font-size: 3vw;
     }
 }
 @media screen and (max-width:500px) {
     .scifi-records {
         padding: 50px 0;
+    }
+    header {
+        padding-top: 20px;
+    }
+    .header-content_text {
+        font-size: 4vw;
     }
 }
