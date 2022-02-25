@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(24, 22, 22);
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(24, 22, 22);
+    
+}
+.header {
+    padding-top: 50px;
+    width: 80%;
+    background: url('/static/imgs/.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    
+}
+.header-content_title {
+    font-size: 3.5vw;
+    font-family:'Bungee', cursive;
+}
+
+.header-content_title h3 {
+    color: rgb(185, 66, 66);
+}
+.header-content_title h3 span {
+    color: rgb(12, 110, 134);
+}
+
+.header-img img {
+    width: 35vw;
+    border-radius: 20px;
+    border-bottom-left-radius: 50%;
+    
+}
+.header-img {
+    height: fit-content;
+    position: relative;
+    border-bottom-left-radius: 50%;
+    box-shadow: 1px 1px 10px 10px rgb(15, 151, 214);
+}
+.header-content_text {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 2vw;
+    color: rgb(175, 197, 202);
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+.scifi-records {
+    width: 100vw;
+    background: rgb(24, 22, 22);
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    transform: scale(0);
+    transition: 1s ease-in-out;
+}
+
+.scifi-records-container {
+    width: 400px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+.visible {
+    transform: scale(1);
+}
+
+.scifi-records-img img {
+    width: 200px;
+}
+
+.scifi-records-content_title {
+    width: 200px;
+    margin-top: 20px;
+}
+.scifi-records-content_title h3{
+    font-size: 1rem;
+    font-family:'Bungee', cursive;
+    color: rgb(212, 177, 177);
+}
+
+.scifi-records-content_title h3 span {
+    color: rgb(185, 66, 66);
+}
+.scifi-records-content_text {
+    margin-top: 10px;
+    color: rgb(12, 110, 134);
+}
+
+@media screen and (max-width:1200px) {
+    .scifi-records {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-img {
+        width: fit-content;
+        margin-top: 60px;
+    }
+    .header-content_text {
+        width: 100%;
+    }
+    .header-content_title {
+        font-size: 5.5vw;
+        
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .scifi-records {
+        grid-template-columns: repeat(2,1fr);
+    }
+    header {
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:700px) {
+    .scifi-records {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .scifi-records
+     {
+        text-align: center;
+    }
+    .scifi-records-content_title {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .scifi-records {
+        padding: 50px 0;
+    }
+}

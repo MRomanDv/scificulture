@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/films.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <!--GOOGLE-FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Bungee&family=Heebo:wght@300&family=Playfair+Display+SC&family=Righteous&family=Rubik&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Bungee&family=Heebo:wght@300&family=Nanum+Gothic+Coding&family=Playfair+Display+SC&family=Righteous&family=Rubik&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+    <!--AWESOME FONTS-->
+    <script src="https://kit.fontawesome.com/c604c8b2c8.js" crossorigin="anonymous"></script> 
+    <title>SCI FI FILMS</title>
+</head>
+<body>
+    <!--NAV-->
+    <div class="container-nav">
+        <div class="nav"></div>
+    </div>
+
+    <!--CAROUSSEL SECTION-->
+    <section aria-label="Newst Photo">
+        <div class="carousel" data-carousel>
+            <button class="carousel-btn prev" data-carousel-button="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" data-carousel-button="next"><i class="fas fa-chevron-right"></i></button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="/static/imgs/sf1.png" alt="sf1-moebius">
+                </li>
+                <li class="slide">
+                    <img src="/static/imgs/sf2.jpeg" alt="sf1-moebius">
+                </li>
+                <li class="slide">
+                    <img src="/static/imgs/sf3.jpeg" alt="sf1-moebius">
+                </li>
+                <li class="slide">
+                    <img src="/static/imgs/sf4.jpeg" alt="sf1-moebius">
+                </li>
+            </ul>
+    
+        </div>
+        <div class="credit"><p>ART BY MOEBIUS</p></div>
+    </section>
+
+    <section class="scfi-artists_section">
+        <div class="moebius">
+            <div class="imgmob">
+                <img src="/static/imgs/moebius.png" alt="">
+            </div>
+            <div class="textbio">
+                <p>Jean Henri Gaston Giraud was a French artist, cartoonist, and writer who worked in the Franco-Belgian bandes dessinées tradition. Giraud garnered worldwide acclaim under the pseudonym Mœbius, as well as Gir outside the English-speaking world, used for the Blueberry series, his most successful creation in the non English speaking parts of the world and his Western themed paintings. Esteemed by Federico Fellini, Stan Lee, and Hayao Miyazaki, among others,he has been described as the most influential bande dessinée artist after Hergé.</p>
+            </div>
+        </div>
+        
+        <div class="comics-covers">
+            <h2>Moebius <span class="work">Work</span></h2>
+            <div class="work-imgs">
+                <div class="img-box">
+                    <img src="/static/imgs/mw1.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/mw2.jpg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/mw3.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/mw4.jpeg">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="comics-covers">
+            <h2>Jean-Claude Mézières <span class="work">Work</span></h2>
+            <div class="work-imgs">
+                <div class="img-box">
+                    <img src="/static/imgs/jcm1.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/jcm2.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/jcm3.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/jcm4.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="comics-covers">
+            <h2>Warren Ellis <span class="work">Work</span></h2>
+            <div class="work-imgs">
+                <div class="img-box">
+                    <img src="/static/imgs/we1.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/we2.png">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/we3.jpeg">
+                </div>
+                <div class="img-box">
+                    <img src="/static/imgs/we4.jpeg">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="films">
+        <div class="scfifl-title"><h2>ICONIC <span class="blue">SCI FI</span> <span class="red">FILMS</span></h2></div>
+        <div class="films-posters_container">
+            <div class="poster" data-director="Directed by Lilly Wachowski and Lana Wachowski">
+                <img src="/static/imgs/mv1.jpeg">
+            </div>
+            <div class="poster" data-director="Directed by Stanley Kubrick">
+                <img src="/static/imgs/mv2.jpeg">
+            </div>
+            <div class="poster" data-director="Directed by Ridley Scott">
+                <img src="/static/imgs/mv3.jpeg">
+            </div>
+            <div class="poster" data-director="Directed by George Lucas">
+                <img src="/static/imgs/mv4.jpeg">
+            </div>
+            <div class="poster" data-director="Directed by Ridley Scott">
+                <img src="/static/imgs/mv5.jpeg">
+            </div>
+            <div class="poster" data-director="Directed by Christopher Nolan">
+                <img src="/static/imgs/mv6.jpg">
+            </div>
+
+        </div>
+    </section>
+
+    <footer></footer>
+
+
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/intersection.js"></script>
+    <script src="/static/js/caroussel.js"></script>
+    <script src="/static/js/footer.js"></script>
+</body>
+</html>

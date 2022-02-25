@@ -1,0 +1,67 @@
+/*FOOTER*/
+footer {
+    position: relative;
+    width: 100vw;
+    background: url('/static/imgs/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-box {
+    width: 100%;
+    padding: 50px 0 100px 0;
+}
+footer h3 {
+    color: rgb(196, 191, 191);
+    font-family: 'Bungee', cursive;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    padding: 100px 0 0 100px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.footer-content1 ul li {
+    list-style: none;
+    font-size: 2.5vmin;
+    font-family: 'Bungee', cursive;
+    margin-right: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: 500ms;
+    color: rgb(177, 173, 173);
+}
+.footer-content1 ul li:hover{
+    transform: scale(1.2);
+    color: sandybrown;
+}
+
+.footer-content1 ul {
+    display: flex;
+}
+
+.socialNet {
+    display: flex;
+    
+}
+.icon-socialNet {
+    margin-right: 25px;
+    font-size: 4vmin;
+    cursor: pointer;
+    color: rgb(177, 173, 173);
+}
+
+.icon-socialNet:hover {
+    animation: iconanimation 500ms ease;
+    color: sandybrown;
+}
+
+
+@media screen and (max-width:1000px) {
+    .footer-logo h3 {
+        padding-left: 0;
+    }
+    
+}
