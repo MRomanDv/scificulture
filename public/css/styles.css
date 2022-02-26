@@ -128,13 +128,12 @@ nav ul li a:hover {
     height: 400px;
     border: 1px solid #fff;
     background: url('/static/imgs/headerbck.jpg');
-    -webkit-overflow-scrolling: touch;
-    background-attachment: fixed;
+    -webkit-overflow-scrolling: touch;;
     z-index: -1;
     overflow-y: scroll;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     border-radius: 20px;
 }
 

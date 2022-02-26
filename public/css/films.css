@@ -157,9 +157,8 @@ section[aria-label="Newst Photo"]{
     height: max-content;
     position: relative;
     padding: 100px 50px 100px 50px;
-    background:url('/static/imgs/filmswp.jpeg') fixed;
+    background:url('/static/imgs/filmswp.jpeg');
     -webkit-overflow-scrolling: touch;
-    z-index: -1;
     background-position: center;
     background-size: cover;
     overflow: hidden;
