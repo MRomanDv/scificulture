@@ -1,0 +1,99 @@
+.game {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(29, 28, 28);
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid rgb(189, 69, 69);
+}
+.satellite {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: url('/static/imgs/satellite.png');
+    background-size: cover;
+    animation: satellite 14s ease-in-out infinite;
+    filter: drop-shadow(0px 5px 15px #468);
+}
+.satellite2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: url('/static/imgs/satellite.png');
+    background-size: cover;
+    animation: satellite2 14s ease-in-out infinite;
+    filter: drop-shadow(0px 5px 15px #468);
+}
+.jump {
+    transform: translateY(-200px);
+}
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 100px;
+    border: 2px solid rgb(223, 83, 18);
+    background: rgb(255, 87, 58);
+}
+.quote {
+    position: relative;
+    width: 50%;
+    color: rgb(226, 220, 220);
+    margin: 100px auto;
+    z-index: 1;
+}
+.quote q {
+    font-size: 4vmin;
+    font-family: 'Nanum Gothic Coding', monospace;
+    line-height: 4rem;
+}
+.planet {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 0;
+    bottom: 0;
+    background: url('/static/imgs/planet1.png'); 
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(5px 5px 40px rgb(223, 134, 62));
+}
+
+@keyframes satellite {
+    0%{
+        
+    }
+    20%{
+        transform: translate(1000px,-800px) rotate(360deg);
+    }
+    50% {
+        transform: translate(1900px,800px);
+    }
+}
+
+@keyframes satellite2 {
+    0%{
+        
+    }
+    20%{
+        transform: translate(-1000px,800px) rotate(360deg);
+    }
+    50% {
+        transform: translate(-1900px,-800px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .quote {
+        width: 80%;
+    }
+}
+@media screen and (max-width:800px) {
+    .quote q {
+        line-height: 6vmin;
+    }
+}

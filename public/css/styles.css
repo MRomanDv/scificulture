@@ -1,4 +1,5 @@
 @import 'footer.css';
+@import 'game.css';
 * {
     margin: 0;
     padding: 0;
@@ -176,12 +177,16 @@ nav ul li a:hover {
     }
     20% {
         opacity: .5;
+        
     }
     50%{
         opacity: 1;
+        background:rgba(219, 21, 21, 0.4) ;
+        
     }
     70% {
         opacity: .8;
+        background:rgba(219, 94, 21, 0.4) ;
     }
     100% {
         transform: translateY(-680px);
